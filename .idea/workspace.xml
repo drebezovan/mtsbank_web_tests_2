@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/BlogPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/CategoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/PaymentSchedulePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/ModalWindowPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PartnerOffersPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PremiumPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/SmallBusinessPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/BlogInputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/BusinessInputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/CreditInputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/MapAssertions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/PageWithArticleParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/PageWithCreditParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/PremiumInputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/steps/TelegramInputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/PreparationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/yml/blogInputData.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/yml/creditInputData.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/yml/premiumInputData.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/yml/smallBusinessInputData.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/yml/telegramInputData.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuites/CreditTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuites/PremiumTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuites/SmallBusinessTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuites/TelegramTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2PHX0IsHK8UgasCTOjLMvuMR6Iv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fred2\IdeaProjects\Graduation_project\src\test\resources" />
+      <recent name="C:\Users\fred2\IdeaProjects\Graduation_project\src\main\resources\yaml" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.testSuites in Graduation_project">
+    <configuration name="BlogTests.blogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.BlogTests" />
+      <option name="METHOD_NAME" value="blogTest(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelegramTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.TelegramTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelegramTests.negativeTelegramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.TelegramTests" />
+      <option name="METHOD_NAME" value="negativeTelegramTest(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in Graduation_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testSuites in Graduation_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/testSuites" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.testSuites in Graduation_project" />
+        <item itemvalue="JUnit.BlogTests.blogTest" />
+        <item itemvalue="JUnit.TelegramTests" />
+        <item itemvalue="JUnit.TelegramTests.negativeTelegramTest" />
+        <item itemvalue="JUnit.java in Graduation_project" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="Selenium" />
+    <option name="lastLanguageId" value="JAVA" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="" />
+      <created>1683114758768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683114758768</updated>
+      <workItem from="1683114760245" duration="4380000" />
+      <workItem from="1683125139745" duration="18450000" />
+      <workItem from="1683294188654" duration="13517000" />
+      <workItem from="1683377246042" duration="14112000" />
+      <workItem from="1683575914106" duration="2204000" />
+      <workItem from="1683626343854" duration="282000" />
+      <workItem from="1683632148738" duration="4710000" />
+      <workItem from="1683640702725" duration="4889000" />
+      <workItem from="1683647491381" duration="5552000" />
+      <workItem from="1683746158586" duration="7514000" />
+      <workItem from="1683781984689" duration="133000" />
+      <workItem from="1683976148591" duration="26686000" />
+      <workItem from="1684007867165" duration="1024000" />
+      <workItem from="1684012451562" duration="3755000" />
+      <workItem from="1684066770570" duration="28896000" />
+      <workItem from="1684144623264" duration="13411000" />
+      <workItem from="1684160410162" duration="15171000" />
+      <workItem from="1684190390985" duration="150000" />
+      <workItem from="1684778037042" duration="7878000" />
+      <workItem from="1684790609644" duration="533000" />
+      <workItem from="1684857444860" duration="588000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java</url>
+          <line>28</line>
+          <properties class="pages.blogPages.ArticlePage" method="getArticleDate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java</url>
+          <line>31</line>
+          <properties class="pages.blogPages.ArticlePage" method="getArticleReadingTime">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

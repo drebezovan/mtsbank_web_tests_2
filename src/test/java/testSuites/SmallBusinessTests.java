@@ -18,7 +18,6 @@ public class SmallBusinessTests extends BaseTests{
     CheckingAccountPage checkingAccountPage = new CheckingAccountPage();
     ChooseTariffPage chooseTariffPage = new ChooseTariffPage();
     BusinessInputData businessInputData;
-    int randomNum = getRandomIntegerBetweenRange(-1, 10000001);
     @Test
     public void smallBusinessTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
@@ -42,9 +41,9 @@ public class SmallBusinessTests extends BaseTests{
                 .fullPlaceholder(businessInputData.getPlaceholderName().get(2), getRandomIntegerBetweenRange(-1, 10000001))
                 .fullPlaceholder(businessInputData.getPlaceholderName().get(3), getRandomIntegerBetweenRange(-1, 5000001))
                 .fullPlaceholder(businessInputData.getPlaceholderName().get(4), getRandomIntegerBetweenRange(-1, 10000001));
-        System.out.println(chooseTariffPage.getNameOfRecommendedTariff());
+        String recommendedTariff = chooseTariffPage.getNameOfRecommendedTariff();
         chooseTariffPage.clickOpenAccountButton();
-        System.out.println(chooseTariffPage.getNameOfTariffInApplication());
+        Assertions.assertEquals(recommendedTariff,chooseTariffPage.getNameOfTariffInApplication());
     }
     @Test
     public void smallBusinessMobileTest() throws IOException {

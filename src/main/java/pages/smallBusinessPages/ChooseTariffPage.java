@@ -9,8 +9,10 @@ public class ChooseTariffPage {
 
     public static final String PLACEHOLDER = "div[label='%s']>input";
     public static final By NAME_OF_RECOMMENDED_TARIFF = By.xpath
-            ("//div[@class='sc-bPjxgn eJGOCe']//div[@class='sc-hrtyTY cYOeVV']//div");
-    public static final By OPEN_ACCOUNT_BUTTON = By.xpath("//div[@class='sc-hrtyTY cYOeVV']//div//button");
+            ("//div[@class='sc-hKKfEi iVrDdZ' or @class='sc-jHMyAn fxrbcm']" +
+                    "//div[@class='sc-eTLXjT bloZsc' or @class='sc-bQVnZi gDdtzv']//div");
+    public static final By OPEN_ACCOUNT_BUTTON = By.xpath
+            ("//div[@class='sc-jHMyAn fxrbcm' or @class='sc-hKKfEi iVrDdZ']//div//button//div ");
     public static final By NAME_OF_TARIFF_IN_APPLICATION = By.xpath
             ("//div[@label='Тариф']//input");
 

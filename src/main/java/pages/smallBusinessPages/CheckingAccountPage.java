@@ -13,7 +13,7 @@ public class CheckingAccountPage {
     public static final By OPEN_ACCOUNT_BUTTON_MOBILE = By.cssSelector
             ("div.styled__Wrapper-sc-1alu4l7-1.bppgPy>div>button");
     public static final By CHOOSE_TARIFF_BUTTON = By.xpath
-            ("//div[ @class='sc-jXktde fBJCcp']//div//a | //div[@class='sc-gInthZ fJLFyn']//div//a");
+            ("//div[ @class='sc-bTvSiT fTNXwT']//div//a");
     public static final By PAYMENT_TYPE_TARIFF = By.xpath
             ("//button[@class='sc-bsipwG dVHGrN']//div | //button[@class='sc-eLgNKc cnlxFV']//div");
     public static final By BEST_TARIFF = By.cssSelector("div.sc-clsFYl.bLZfjY>button");

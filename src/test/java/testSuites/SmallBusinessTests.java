@@ -20,7 +20,7 @@ public class SmallBusinessTests extends BaseTests{
     BusinessInputData businessInputData;
     int randomNum = getRandomIntegerBetweenRange(-1, 10000001);
     @Test
-    public void smallBusinessTest() throws InterruptedException, IOException {
+    public void smallBusinessTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на категорию "Малый бизнес и ИП" в шапке сайта
         // нажать на категорию "Расчетный счет"
@@ -47,7 +47,7 @@ public class SmallBusinessTests extends BaseTests{
         System.out.println(chooseTariffPage.getNameOfTariffInApplication());
     }
     @Test
-    public void smallBusinessMobileTest() throws InterruptedException, IOException {
+    public void smallBusinessMobileTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на иконку "Ещё" внизу экрана
         // нажать на категорию "Малый бизнес и ИП"

@@ -3,8 +3,6 @@ package steps;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.codeborne.selenide.Selenide.$;
-
 public interface PageWithArticleParameters {
     String getArticleCategory();
     String getArticleReadingTime();

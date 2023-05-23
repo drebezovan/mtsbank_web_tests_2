@@ -26,43 +26,51 @@ public class CheckingAccountPage {
     public static final By FULL_NAME = By.cssSelector("div[label='Контактное лицо']>input");
     public static final By ERROR_MSG = By.cssSelector("div.Wrapper-sc-1vydk7-0.OlnRe.HelperText-sc-jsokzo-0.hByJHf");
 
-    public CheckingAccountPage clickOpenAccountButton(){
+    public CheckingAccountPage clickOpenAccountButton() {
         $(OPEN_ACCOUNT_BUTTON).click();
         return this;
     }
-    public CheckingAccountPage clickOpenAccountButtonMobile(){
+
+    public CheckingAccountPage clickOpenAccountButtonMobile() {
         $(OPEN_ACCOUNT_BUTTON_MOBILE).click();
         return this;
     }
-    public CheckingAccountPage clickChooseTariffButton(){
+
+    public CheckingAccountPage clickChooseTariffButton() {
         $(CHOOSE_TARIFF_BUTTON).shouldBe(Condition.visible).click();
         return this;
     }
-    public CheckingAccountPage clickPaymentTypeTariffMobile(){
+
+    public CheckingAccountPage clickPaymentTypeTariffMobile() {
         $(PAYMENT_TYPE_TARIFF).click();
         return this;
     }
-    public CheckingAccountPage clickBestTariffMobile(){
+
+    public CheckingAccountPage clickBestTariffMobile() {
         $(BEST_TARIFF).click();
         return this;
     }
-    public CheckingAccountPage fullFields(String telephone, String email){
+
+    public CheckingAccountPage fullFields(String telephone, String email) {
         $(TELEPHONE_FIELD).sendKeys(telephone);
         $(EMAIL_FIELD).sendKeys(email);
         return this;
     }
-    public CheckingAccountPage clickCheckbox(){
+
+    public CheckingAccountPage clickCheckbox() {
         $(CHECKBOX).click();
         return this;
     }
-    public CheckingAccountPage fullFieldsForOrganization(String organizationName, String nameOfSelectorField, String name){
+
+    public CheckingAccountPage fullFieldsForOrganization(String organizationName, String nameOfSelectorField, String name) {
         $(ORGANIZATION_NAME).sendKeys(organizationName);
         $(SELECTOR_FIELD).click();
         $$(CATEGORIES_OF_SELECTOR_FIELD).findBy(Condition.text(nameOfSelectorField)).click();
         $(FULL_NAME).sendKeys(name);
         return this;
     }
-    public String getErrorMsg(){
+
+    public String getErrorMsg() {
         return $(ERROR_MSG).getText();
     }
 }

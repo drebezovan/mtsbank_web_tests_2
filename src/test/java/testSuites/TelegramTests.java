@@ -10,7 +10,7 @@ import steps.TelegramInputData;
 
 import java.io.IOException;
 
-public class TelegramTests extends BaseTests{
+public class TelegramTests extends BaseTests {
 
     HomePage homePage = new HomePage();
     TelegramPage telegramPage = new TelegramPage();
@@ -18,7 +18,7 @@ public class TelegramTests extends BaseTests{
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1})
-    public void negativeTelegramTest(int index) throws InterruptedException, IOException {
+    public void negativeTelegramTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти постер "Новости МТС банка без задержки в Telegram"
         // Нажать на кнопку "Подписаться"
@@ -27,10 +27,11 @@ public class TelegramTests extends BaseTests{
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePage()
                 .clickSubscribeTelegram();
-        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(index),telegramPage.getNameTelegramGroup());
+        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(index), telegramPage.getNameTelegramGroup());
     }
+
     @Test
-    public void positiveTelegramTest() throws InterruptedException, IOException {
+    public void positiveTelegramTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти в конце страницы иконку с изображением логотипа Telegram
         // нажать на эту иконку
@@ -39,11 +40,12 @@ public class TelegramTests extends BaseTests{
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePage()
                 .clickTelegramButton();
-        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(1),telegramPage.getNameTelegramGroup());
+        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(1), telegramPage.getNameTelegramGroup());
     }
+
     @ParameterizedTest
     @ValueSource(ints = {0, 1})
-    public void negativeTelegramMobileTest(int index) throws InterruptedException, IOException {
+    public void negativeTelegramMobileTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти постер "Новости МТС банка без задержки в Telegram"
         // Нажать на кнопку "Подписаться"
@@ -52,10 +54,11 @@ public class TelegramTests extends BaseTests{
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePageMobile()
                 .clickSubscribeTelegram();
-        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(index),telegramPage.getNameTelegramGroup());
+        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(index), telegramPage.getNameTelegramGroup());
     }
+
     @Test
-    public void positiveTelegramMobileTest() throws InterruptedException, IOException {
+    public void positiveTelegramMobileTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти в конце страницы иконку с изображением логотипа Telegram
         // нажать на эту иконку
@@ -65,6 +68,6 @@ public class TelegramTests extends BaseTests{
         homePage.openHomePageMobile()
                 .clickRegionField()
                 .clickTelegramButton();
-        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(1),telegramPage.getNameTelegramGroup());
+        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(1), telegramPage.getNameTelegramGroup());
     }
 }

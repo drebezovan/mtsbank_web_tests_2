@@ -17,24 +17,28 @@ public class CategoryPage implements PageWithArticleParameters {
     public static final By ARTICLE = By.xpath
             ("//div[@class='sc-pGacB eHzbCx'] | //div[@class='sc-ehSDrC lhyqot']");
 
-    public String getArticleCategory(){
+    public String getArticleCategory() {
         return $(ARTICLE_CATEGORY).innerText().trim();
     }
-    public String getArticleReadingTime(){
+
+    public String getArticleReadingTime() {
         return $(ARTICLE_READING_TIME).innerText().trim();
     }
-    public String getArticleName(){
+
+    public String getArticleName() {
         return $(ARTICLE_NAME).innerText().trim();
     }
-    public String getArticleDate(){
+
+    public String getArticleDate() {
         return $(ARTICLE_DATE).innerText().trim();
     }
-    public CategoryPage clickArticle(){
+
+    public CategoryPage clickArticle() {
         $(ARTICLE).click();
         return this;
     }
 
-    public CategoryPage clickArticleCategory(){
+    public CategoryPage clickArticleCategory() {
         $(ARTICLE_CATEGORY).click();
         return this;
     }

@@ -23,7 +23,7 @@ public class BlogTests extends BaseTests{
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1, 2, 3, 4, 5})
-    public void blogTest(int index) throws InterruptedException, IOException {
+    public void blogTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на постер "Блог"
         // на открывшейся странице (под названием "Блог") выбрать категорию, например "Вклады и счета"
@@ -40,7 +40,7 @@ public class BlogTests extends BaseTests{
         MapAssertions.assertMapEquals(articleParamsFromCategoryPage,articlePage.getArticleParams());
     }
     @Test
-    public void blogMobileTest() throws InterruptedException {
+    public void blogMobileTest() {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на постер "Блог"
         // на открывшейся странице (под названием "Блог") нажать на "+3"

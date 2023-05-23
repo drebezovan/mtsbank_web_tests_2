@@ -20,7 +20,7 @@ public class PremiumTests extends BaseTests {
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1, 2, 3, 4})
-    public void premiumPartnerTest(int index) throws InterruptedException, IOException {
+    public void premiumPartnerTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // перейти в раздел "Премиум" в шапке сайта
         // на открывшейся странице пролистать вниз до раздела "Партнеры"
@@ -41,7 +41,7 @@ public class PremiumTests extends BaseTests {
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1, 2, 3, 4})
-    public void premiumPartnerMobileTest(int index) throws InterruptedException, IOException {
+    public void premiumPartnerMobileTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на иконку "Ещё" внизу экрана
         // нажать на категорию "Премиум"

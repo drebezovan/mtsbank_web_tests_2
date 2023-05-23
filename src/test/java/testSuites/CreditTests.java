@@ -20,7 +20,7 @@ public class CreditTests extends BaseTests{
     CreditInputData creditInputData;
 
     @Test
-    public void creditTest() throws InterruptedException, IOException {
+    public void creditTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на категорию "Кредиты" в шапке сайта
         // нажать на постер "Кредит под залог"
@@ -48,7 +48,7 @@ public class CreditTests extends BaseTests{
         MapAssertions.assertMapEquals(creditParamsFromCreditUnderDepositPage, creditParamsFromPaymentSchedulePage);
     }
     @Test
-    public void creditMobileTest() throws InterruptedException, IOException {
+    public void creditMobileTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на иконку "Кредиты" внизу экрана
         // нажать на постер "Кредит под залог"

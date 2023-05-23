@@ -7,6 +7,7 @@ import pages.creditPages.PaymentSchedulePage;
 import pages.homePage.HomePage;
 import steps.CreditInputData;
 import steps.MapAssertions;
+import utils.PreparationUtils;
 
 import java.io.IOException;
 import java.util.Map;
@@ -16,7 +17,6 @@ public class CreditTests extends BaseTests{
     CreditPage creditPage = new CreditPage();
     CreditUnderDepositPage creditUnderDepositPage = new CreditUnderDepositPage();
     PaymentSchedulePage paymentSchedulePage = new PaymentSchedulePage();
-
     CreditInputData creditInputData;
 
     @Test
@@ -36,12 +36,12 @@ public class CreditTests extends BaseTests{
                 .clickCreditCategory();
         creditPage.clickCreditUnderDepositPoster(creditInputData.getPosterName());
         creditUnderDepositPage.clickSubmitApplication()
-                              .fullCreditSumField(creditInputData.getCreditSum().get(2))
-                              .fullCreditPeriodField(creditInputData.getCreditPeriod().get(2))
-                              .selectTypeIncomeField(creditInputData.getTypeOfIncome().get(1))
-                              .selectObjectDepositField(creditInputData.getObjectName().get(2))
-                              .fullCityField(creditInputData.getCity())
-                              .selectCreditGoalField(creditInputData.getCreditGoal().get(2));
+                              .fullCreditSumField(creditInputData.getCreditSum().get(PreparationUtils.getRandomIntegerBetweenRange(0,6)))
+                              .fullCreditPeriodField(creditInputData.getCreditPeriod().get(PreparationUtils.getRandomIntegerBetweenRange(0,6)))
+                              .selectTypeIncomeField(creditInputData.getTypeOfIncome().get(PreparationUtils.getRandomIntegerBetweenRange(0,1)))
+                              .selectObjectDepositField(creditInputData.getObjectName().get(PreparationUtils.getRandomIntegerBetweenRange(0,2)))
+                              .fullCityField(creditInputData.getCity().get(PreparationUtils.getRandomIntegerBetweenRange(0,28)))
+                              .selectCreditGoalField(creditInputData.getCreditGoal().get(PreparationUtils.getRandomIntegerBetweenRange(0,9)));
         Map<String, String> creditParamsFromCreditUnderDepositPage = creditUnderDepositPage.getCreditParams();
         creditUnderDepositPage.clickPaymentScheduleButton();
         Map<String, String> creditParamsFromPaymentSchedulePage = paymentSchedulePage.getCreditParams();
@@ -68,7 +68,7 @@ public class CreditTests extends BaseTests{
                               .fullCreditPeriodField(creditInputData.getCreditPeriod().get(2))
                               .selectTypeIncomeField(creditInputData.getTypeOfIncome().get(1))
                               .selectObjectDepositField(creditInputData.getObjectName().get(2))
-                              .fullCityField(creditInputData.getCity())
+                              .fullCityField(creditInputData.getCity().get(2))
                               .selectCreditGoalField(creditInputData.getCreditGoal().get(2));
         Map<String, String> creditParamsFromCreditUnderDepositPage = creditUnderDepositPage.getCreditParams();
         creditUnderDepositPage.clickPaymentScheduleButton();

@@ -1,7 +1,6 @@
 package pages.creditPages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import steps.PageWithCreditParameters;
@@ -26,7 +25,7 @@ public class CreditUnderDepositPage implements PageWithCreditParameters {
     public static final By NAME_PARAMETER_FIELD = By.xpath
             ("//div[@class='sc-crrszt iprLEn']//div | //div[@class='sc-citxvW hZzfEK']//div");
     public static final By VALUE_PARAMETER_FIELD = By.xpath(".//..//..//h4");
-    public static final By PAYMENT_SCHEDULE_BUTTON = By.cssSelector("div.sc-fbkiRW.bZLnto>button");
+    public static final By PAYMENT_SCHEDULE_BUTTON = By.xpath("//div[@class='sc-iJuVqt hSZvIe']//button");
 
     public CreditUnderDepositPage clickSubmitApplication() {
         $(SUBMIT_APPLICATION_BUTTON).click();
@@ -75,9 +74,7 @@ public class CreditUnderDepositPage implements PageWithCreditParameters {
     }
 
     public String getParameter(String nameOfParameter) {
-        SelenideElement monthlyPaymentValue = $$(NAME_PARAMETER_FIELD).findBy(Condition.text(nameOfParameter))
-                .$(VALUE_PARAMETER_FIELD);
-        return monthlyPaymentValue.getText().trim();
+        return $$(NAME_PARAMETER_FIELD).findBy(Condition.text(nameOfParameter)).$(VALUE_PARAMETER_FIELD).getText().trim();
     }
 
     public CreditUnderDepositPage clickPaymentScheduleButton() {

@@ -10,6 +10,6 @@ public class CreditInputData {
     private List<String> creditPeriod;
     private List<String> typeOfIncome;
     private List<String> objectName;
-    String city;
+    private List<String> city;
     private List<String> creditGoal;
 }

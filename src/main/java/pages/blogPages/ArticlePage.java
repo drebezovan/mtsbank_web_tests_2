@@ -8,17 +8,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ArticlePage implements PageWithArticleParameters {
     public static final By ARTICLE_CATEGORY = By.xpath
-            ("//div[@class='sc-ehSDrC hIcRvt']//div//a | //div[@class='sc-pGacB hqCMbN']//div//a | " +
-                    "//div[@class='sc-hKgJUU jaxqmo']//div//a |" +
-                    "//div[@class='sc-hKgJUU jaxqmo']//div//a");
+            ("//div[@class='sc-ehSDrC hIcRvt' or @class='sc-pGacB hqCMbN']//div//div//a");
     public static final By ARTICLE_NAME = By.xpath("//div//div//h1 | //div[@class='sc-hKgJUU jaxqmo']//p");
     public static final By ARTICLE_DATE = By.xpath
-            ("//div[@class='sc-fubCzh hZosTh']//div[@class='styled__SmartText-n9vm43-0 bOaTzw'] | " +
-                    "//div[@class='sc-higWrZ iLazrU']//div[@class='sc-eJMPIT Werdk']//" +
-                    "div[@class='styled__SmartText-n9vm43-0 grJLDx'] | //div[@class='sc-fubCzh hZosTh']//div");
+            ("//div[@class='sc-ehSDrC hIcRvt' or @class='sc-pGacB hqCMbN']//div//div//div");
     public static final By ARTICLE_READING_TIME = By.xpath
-            ("//div[@class='sc-gKseQn gycvVa']//div[@class='styled__SmartText-n9vm43-0 bOaTzw '] " +
-                    "| //div[@class='sc-gKseQn gycvVa']//div");
+            ("//div[@class='sc-ehSDrC hIcRvt' or @class='sc-pGacB hqCMbN']//div//div//div//div");
 
     public String getArticleCategory(){
         return $(ARTICLE_CATEGORY).shouldBe(Condition.visible).innerText().trim();

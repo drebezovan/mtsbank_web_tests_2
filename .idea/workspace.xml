@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="refactoring &#10;modify README file">
+    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="modify README file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/PaymentSchedulePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/PaymentSchedulePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/CreditInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/CreditInputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/yml/creditInputData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/yml/creditInputData.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/CreditTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/CreditTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +79,23 @@
       <recent name="config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testSuites in Graduation_project">
+  <component name="RunManager" selected="JUnit.TelegramTests.positiveTelegramTest">
+    <configuration name="BlogTests.blogMobileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.BlogTests" />
+      <option name="METHOD_NAME" value="blogMobileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BlogTests.blogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graduation_project" />
       <extension name="coverage">
@@ -86,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelegramTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreditTests.creditTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graduation_project" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +121,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testSuites" />
-      <option name="MAIN_CLASS_NAME" value="testSuites.TelegramTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.CreditTests" />
+      <option name="METHOD_NAME" value="creditTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,29 +144,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java in Graduation_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TelegramTests.positiveTelegramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graduation_project" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testSuites in Graduation_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graduation_project" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/testSuites" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.TelegramTests" />
+      <option name="METHOD_NAME" value="positiveTelegramTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testSuites in Graduation_project" />
-        <item itemvalue="JUnit.BlogTests.blogTest" />
-        <item itemvalue="JUnit.TelegramTests" />
+        <item itemvalue="JUnit.TelegramTests.positiveTelegramTest" />
         <item itemvalue="JUnit.TelegramTests.negativeTelegramTest" />
-        <item itemvalue="JUnit.java in Graduation_project" />
+        <item itemvalue="JUnit.CreditTests.creditTest" />
+        <item itemvalue="JUnit.BlogTests.blogMobileTest" />
+        <item itemvalue="JUnit.BlogTests.blogTest" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +202,9 @@
       <workItem from="1684190390985" duration="150000" />
       <workItem from="1684778037042" duration="7878000" />
       <workItem from="1684790609644" duration="533000" />
-      <workItem from="1684857444860" duration="3777000" />
+      <workItem from="1684857444860" duration="7199000" />
+      <workItem from="1684868005745" duration="3522000" />
+      <workItem from="1684874072902" duration="5533000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684858880429</created>
@@ -191,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684861010934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modify README file">
+      <created>1684861936432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684861936432</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,30 +236,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="refactoring &#10;modify README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring &#10;modify README file" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java</url>
-          <line>28</line>
-          <properties class="pages.blogPages.ArticlePage" method="getArticleDate">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java</url>
-          <line>31</line>
-          <properties class="pages.blogPages.ArticlePage" method="getArticleReadingTime">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="modify README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify README file" />
   </component>
 </project>

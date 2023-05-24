@@ -1,6 +1,8 @@
 package testSuites;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.homePage.HomePage;
 import pages.smallBusinessPages.CheckingAccountPage;
@@ -12,30 +14,31 @@ import java.io.IOException;
 
 import static utils.PreparationUtils.getRandomIntegerBetweenRange;
 
-public class SmallBusinessTests extends BaseTests{
+@Epic("Web tests")
+@Feature("MTS bank website")
+@DisplayName("Тестовый набор сценариев для категории «Малый бизнес и ИП»")
+@Link(name = "Ссылка на сайт", url = "https://www.mtsbank.ru/")
+@Owner("Дребезова Наталья")
+public class SmallBusinessTests extends BaseTests {
     HomePage homePage = new HomePage();
     SmallBusinessPage smallBusinessPage = new SmallBusinessPage();
     CheckingAccountPage checkingAccountPage = new CheckingAccountPage();
     ChooseTariffPage chooseTariffPage = new ChooseTariffPage();
     BusinessInputData businessInputData;
-    @Test
-    public void smallBusinessTest() throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // нажать на категорию "Малый бизнес и ИП" в шапке сайта
-        // нажать на категорию "Расчетный счет"
-        // нажать на кнопку "Открыть счет" на постере "Открыть расчетный счет"
-        // нажать на кнопку "Подобрать тариф"
-        // заполнить все поля в области "Подберите тариф для бизнеса"
-        // навести на рекомендованный тариф и сохранить его название (в переменную)
-        // нажать на кнопку "Открыть счет" рекомендованного тарифа
-        // проверить название тарифа
 
+    @Test
+    @Feature("Десктопная версия сайта")
+    @DisplayName("Проверка отображения выбранного тарифа при заполнении заявки на открытие счета")
+    @Description("Проверяем, что при подборе рекомендованного тарифа, его название совпадает с названием, " +
+            "которое отображается при заполнении заявки на открытие счета")
+    @Severity(SeverityLevel.NORMAL)
+    public void smallBusinessTest() throws IOException {
         businessInputData = mapper.readValue(fileForBusiness, BusinessInputData.class);
         homePage.openHomePage()
                 .clickSmallBusinessCategory();
         smallBusinessPage.clickCheckingAccountCategory();
         checkingAccountPage.clickOpenAccountButton()
-                           .clickChooseTariffButton();
+                .clickChooseTariffButton();
         chooseTariffPage.fullPlaceholder(businessInputData.getPlaceholderName().get(0), getRandomIntegerBetweenRange(-1, 1001))
                 .fullPlaceholder(businessInputData.getPlaceholderName().get(1), getRandomIntegerBetweenRange(-1, 10000001))
                 .fullPlaceholder(businessInputData.getPlaceholderName().get(2), getRandomIntegerBetweenRange(-1, 10000001))
@@ -43,24 +46,16 @@ public class SmallBusinessTests extends BaseTests{
                 .fullPlaceholder(businessInputData.getPlaceholderName().get(4), getRandomIntegerBetweenRange(-1, 10000001));
         String recommendedTariff = chooseTariffPage.getNameOfRecommendedTariff();
         chooseTariffPage.clickOpenAccountButton();
-        Assertions.assertEquals(recommendedTariff,chooseTariffPage.getNameOfTariffInApplication());
+        Assertions.assertEquals(recommendedTariff, chooseTariffPage.getNameOfTariffInApplication());
     }
-    @Test
-    public void smallBusinessMobileTest() throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // нажать на иконку "Ещё" внизу экрана
-        // нажать на категорию "Малый бизнес и ИП"
-        // в выпадающем списке нажать на категорию "Расчетный счет"
-        // нажать на кнопку "Открыть счет" на постере "Открыть расчетный счет"
-        // нажать на кнопку "Единоразово" в области "Тарифы для обслуживания счета"
-        // навести на рекомендованный тариф
-        // нажать на кнопку "Открыть счет" рекомендованного тарифа
-        // заполнить все поля, кроме ИНН
-        // поставить галочку в "Ввести данные организации вручную"
-        // заполнить появившиеся поля
-        // нажать на кнопку "Отправить заявку"
-        // проверить, что отображается сообщение об ошибке "Поле обязательно для заполнения"
 
+    @Test
+    @Feature("Мобильная версия сайта")
+    @DisplayName("Проверка отображения сообщения об ошибке при заполнении заявки на открытие счета")
+    @Description("Проверяем, что при заполнении заявки на рекомендованный тариф, отображается сообщение об ошибке " +
+            "при некорректном введении почты в поле")
+    @Severity(SeverityLevel.CRITICAL)
+    public void smallBusinessMobileTest() throws IOException {
         businessInputData = mapper.readValue(fileForBusiness, BusinessInputData.class);
         homePage.openHomePageMobile()
                 .clickRegionField()

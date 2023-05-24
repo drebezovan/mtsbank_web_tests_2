@@ -1,6 +1,9 @@
 package testSuites;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.homePage.HomePage;
@@ -11,6 +14,11 @@ import steps.PremiumInputData;
 
 import java.io.IOException;
 
+@Epic("Web tests")
+@Feature("MTS bank website")
+@DisplayName("Тестовый набор сценариев для категории «Премиум»")
+@Link(name = "Ссылка на сайт", url = "https://www.mtsbank.ru/")
+@Owner("Дребезова Наталья")
 public class PremiumTests extends BaseTests {
     HomePage homePage = new HomePage();
     PremiumPage premiumPage = new PremiumPage();
@@ -19,18 +27,13 @@ public class PremiumTests extends BaseTests {
     PremiumInputData premiumInputData;
 
     @ParameterizedTest
-    @ValueSource(ints = { 1, 2, 3})
+    @ValueSource(ints = {1, 2, 3})
+    @Feature("Десктопная версия сайта")
+    @DisplayName("Проверка совпадения названия компании-партнера на странице с перечнем компаний и в модальном окне")
+    @Description("Проверяем совпадение названия компании на странице с перечнем компаний и в модальном окне")
+    @Severity(SeverityLevel.TRIVIAL)
     public void premiumPartnerTest(int index) throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // перейти в раздел "Премиум" в шапке сайта
-        // на открывшейся странице пролистать вниз до раздела "Партнеры"
-        // перейти в раздел "Все предложения"
-        // на открывшейся странице выбрать раздел (например, "Искусство")
-        // в выбранном разделе нажать на первый постер
-        // на открывшемся модальном окне проверить название постера
-
         premiumInputData = mapper.readValue(fileForPremium, PremiumInputData.class);
-
         homePage.openHomePage()
                 .clickPremiumCategory();
         premiumPage.clickAllOffersButton();
@@ -41,20 +44,12 @@ public class PremiumTests extends BaseTests {
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
+    @Feature("Мобильная версия сайта")
+    @DisplayName("Проверка совпадения названия компании-партнера на странице с перечнем компаний и в модальном окне")
+    @Description("Проверяем совпадение названия компании на странице с перечнем компаний и в модальном окне")
+    @Severity(SeverityLevel.TRIVIAL)
     public void premiumPartnerMobileTest(int index) throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // нажать на иконку "Ещё" внизу экрана
-        // нажать на категорию "Премиум"
-        // на открывшейся странице пролистать вниз до раздела "Партнеры"
-        // перейти в раздел "все"
-        // нажать на значок селектора
-        // выбрать категорию (например, "Искусство")
-        // кликнуть по полю вокруг селектора
-        // в выбранном разделе нажать на любой постер
-        // на открывшемся модальном окне проверить название постера
-
         premiumInputData = mapper.readValue(fileForPremium, PremiumInputData.class);
-
         homePage.openHomePageMobile()
                 .clickRegionField()
                 .clickCategoriesIcon()

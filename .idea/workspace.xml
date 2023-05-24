@@ -4,9 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="modify locators in all tests">
+    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="debug github action">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/BlogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/BlogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/CategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/CategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/PaymentSchedulePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/PaymentSchedulePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/premiumPages/ModalWindowPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/ModalWindowPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PartnerOffersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PartnerOffersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PremiumPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PremiumPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/SmallBusinessPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/SmallBusinessPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/CreditTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/CreditTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/PremiumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/PremiumTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/SmallBusinessTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/SmallBusinessTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/TelegramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/TelegramTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +205,8 @@
       <workItem from="1684857444860" duration="7199000" />
       <workItem from="1684868005745" duration="3522000" />
       <workItem from="1684874072902" duration="9850000" />
-      <workItem from="1684917330808" duration="21994000" />
+      <workItem from="1684917330808" duration="26597000" />
+      <workItem from="1684956333915" duration="6722000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684858880429</created>
@@ -243,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684943709535</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="debug github action">
+      <created>1684944454096</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684944454096</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +286,7 @@
     <MESSAGE value="refactor README" />
     <MESSAGE value="add github actions" />
     <MESSAGE value="modify locators in all tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify locators in all tests" />
+    <MESSAGE value="debug github action" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug github action" />
   </component>
 </project>

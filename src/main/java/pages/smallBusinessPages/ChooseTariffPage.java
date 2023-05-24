@@ -1,5 +1,6 @@
 package pages.smallBusinessPages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
@@ -17,19 +18,26 @@ public class ChooseTariffPage {
             ("//div[@label='Тариф']//input");
 
 
-    public ChooseTariffPage fullPlaceholder(String placeholderName, Integer placeholderValue){
+    @Step("Заполнить все поля в области «Подберите тариф для бизнеса»")
+    public ChooseTariffPage fullPlaceholder(String placeholderName, Integer placeholderValue) {
         String del = Keys.chord(Keys.CONTROL, "a") + Keys.DELETE;
-        $(String.format(PLACEHOLDER,placeholderName)).sendKeys(del + placeholderValue);
+        $(String.format(PLACEHOLDER, placeholderName)).sendKeys(del + placeholderValue);
         return this;
     }
-    public String getNameOfRecommendedTariff(){
+
+    @Step("Навести на рекомендованный тариф и сохранить его название (в переменную)")
+    public String getNameOfRecommendedTariff() {
         return $(NAME_OF_RECOMMENDED_TARIFF).getText();
     }
-    public ChooseTariffPage clickOpenAccountButton(){
+
+    @Step("Нажать на кнопку «Открыть счет» рекомендованного тарифа")
+    public ChooseTariffPage clickOpenAccountButton() {
         $(OPEN_ACCOUNT_BUTTON).click();
         return this;
     }
-    public String getNameOfTariffInApplication(){
+
+    @Step("Проверить название тарифа")
+    public String getNameOfTariffInApplication() {
         return $(NAME_OF_TARIFF_IN_APPLICATION).getAttribute("value");
     }
 }

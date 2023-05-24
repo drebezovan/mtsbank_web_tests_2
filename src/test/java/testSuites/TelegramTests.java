@@ -1,6 +1,8 @@
 package testSuites;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -10,6 +12,11 @@ import steps.TelegramInputData;
 
 import java.io.IOException;
 
+@Epic("Web tests")
+@Feature("MTS bank website")
+@DisplayName("Тестовый набор сценариев для категории «Telegram»")
+@Link(name = "Ссылка на сайт", url = "https://www.mtsbank.ru/")
+@Owner("Дребезова Наталья")
 public class TelegramTests extends BaseTests {
 
     HomePage homePage = new HomePage();
@@ -18,12 +25,12 @@ public class TelegramTests extends BaseTests {
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1})
+    @Feature("Десктопная версия сайта")
+    @DisplayName("Проверка совпадения названия Telegram канала с тестовыми данными")
+    @Description("Проверяем, что при нажатии на постер «Telegram», на открывшейся странице отображается название, " +
+            "совпадающее с тестовыми данными")
+    @Severity(SeverityLevel.MINOR)
     public void subscribeTelegramTest(int index) throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // найти постер "Новости МТС банка без задержки в Telegram"
-        // Нажать на кнопку "Подписаться"
-        // на открывшейся странице проверить название канала с ожидаемыми названиями
-
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePage()
                 .clickSubscribeTelegram();
@@ -31,12 +38,12 @@ public class TelegramTests extends BaseTests {
     }
 
     @Test
+    @Feature("Десктопная версия сайта")
+    @DisplayName("Проверка совпадения названия Telegram канала с тестовыми данными при нажатии на иконку мессенджера")
+    @Description("Проверяем, что при нажатии на иконку «Telegram», на открывшейся странице отображается название, " +
+            "совпадающее с тестовыми данными")
+    @Severity(SeverityLevel.MINOR)
     public void telegramButtonTest() throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // найти в конце страницы иконку с изображением логотипа Telegram
-        // нажать на эту иконку
-        // на открывшейся странице проверить, что отображается надпись "Новости МТС Банка без задержки"
-
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePage()
                 .clickTelegramButton();
@@ -44,12 +51,12 @@ public class TelegramTests extends BaseTests {
     }
 
     @Test
+    @Feature("Мобильная версия сайта")
+    @DisplayName("Проверка совпадения названия Telegram канала с тестовыми данными")
+    @Description("Проверяем, что при нажатии на постер «Telegram», на открывшейся странице отображается название, " +
+            "совпадающее с тестовыми данными")
+    @Severity(SeverityLevel.MINOR)
     public void subscribeTelegramMobileTest() throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // найти постер "Новости МТС банка без задержки в Telegram"
-        // Нажать на кнопку "Подписаться"
-        // на открывшейся странице проверить название канала с ожидаемым названием
-
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePageMobile()
                 .clickRegionField()
@@ -58,12 +65,12 @@ public class TelegramTests extends BaseTests {
     }
 
     @Test
+    @Feature("Мобильная версия сайта")
+    @DisplayName("Проверка совпадения названия Telegram канала с тестовыми данными при нажатии на иконку мессенджера")
+    @Description("Проверяем, что при нажатии на иконку «Telegram», на открывшейся странице отображается название, " +
+            "совпадающее с тестовыми данными")
+    @Severity(SeverityLevel.MINOR)
     public void telegramButtonMobileTest() throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // найти в конце страницы иконку с изображением логотипа Telegram
-        // нажать на эту иконку
-        // на открывшейся странице проверить, что отображается надпись "Новости МТС Банка без задержки"
-
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePageMobile()
                 .clickRegionField()

@@ -1,5 +1,7 @@
 package testSuites;
 
+import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.blogPages.ArticlePage;
@@ -12,7 +14,12 @@ import steps.MapAssertions;
 import java.io.IOException;
 import java.util.Map;
 
-public class BlogTests extends BaseTests{
+@Epic("Web tests")
+@Feature("MTS bank website")
+@DisplayName("Тестовый набор сценариев для категории «Блог»")
+@Link(name = "Ссылка на сайт", url = "https://www.mtsbank.ru/")
+@Owner("Дребезова Наталья")
+public class BlogTests extends BaseTests {
 
     HomePage homePage = new HomePage();
     BlogPage blogPage = new BlogPage();
@@ -21,33 +28,30 @@ public class BlogTests extends BaseTests{
     BlogInputData blogInputData;
 
     @ParameterizedTest
-    @ValueSource(ints = { 1, 2, 3})
+    @ValueSource(ints = {1, 2, 3})
+    @Feature("Десктопная версия сайта")
+    @DisplayName("Проверка параметров категории «Блог»")
+    @Description("Проверяем совпадение параметров (категорию, название, дату создания статьи и время чтения) " +
+            "статьи на странице с разными статьями и на странице выбранной статьи")
+    @Severity(SeverityLevel.NORMAL)
     public void blogTest(int index) throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // нажать на постер "Блог"
-        // на открывшейся странице (под названием "Блог") выбрать категорию, например "Вклады и счета"
-        // сохранить (в переменные) параметры первой статьи: категорию, название, дату создания статьи и время чтения
-        // нажать на первую статью
-        // на открывшейся странице проверить совпадение параметров статьи
-
         blogInputData = mapper.readValue(fileForBlog, BlogInputData.class);
         homePage.openHomePage()
                 .clickBlogPoster();
         blogPage.clickBlogCategory(blogInputData.getCategory().get(index));
         Map<String, String> articleParamsFromCategoryPage = depositsCategoryPage.getArticleParams();
         depositsCategoryPage.clickArticle();
-        MapAssertions.assertMapEquals(articleParamsFromCategoryPage,articlePage.getArticleParams());
+        MapAssertions.assertMapEquals(articleParamsFromCategoryPage, articlePage.getArticleParams());
     }
+
     @ParameterizedTest
-    @ValueSource(ints = { 1, 2, 3})
+    @ValueSource(ints = {1, 2, 3})
+    @Feature("Мобильная версия сайта")
+    @DisplayName("Проверка параметров категории «Блог»")
+    @Description("Проверяем совпадение параметров (категорию, название, дату создания статьи и время чтения) " +
+            "статьи на странице с разными статьями и на странице выбранной статьи")
+    @Severity(SeverityLevel.NORMAL)
     public void blogMobileTest(int index) throws IOException {
-        // открыть сайт https://www.mtsbank.ru/
-        // нажать на постер "Блог"
-        // на открывшейся странице (под названием "Блог") нажать на "+3"
-        // выбрать категорию, например "Вклады и счета"
-        // сохранить (в переменные) параметры первой статьи: категорию, название, дату создания статьи и время чтения
-        // нажать на первую статью
-        // на открывшейся странице проверить совпадение параметров статьи
         blogInputData = mapper.readValue(fileForBlog, BlogInputData.class);
         homePage.openHomePageMobile()
                 .clickRegionField()
@@ -56,6 +60,6 @@ public class BlogTests extends BaseTests{
                 .clickBlogCategory(blogInputData.getCategory().get(index));
         Map<String, String> articleParamsFromDepositsCategoryPage = depositsCategoryPage.getArticleParams();
         depositsCategoryPage.clickArticle();
-        MapAssertions.assertMapEquals(articleParamsFromDepositsCategoryPage,articlePage.getArticleParams());
+        MapAssertions.assertMapEquals(articleParamsFromDepositsCategoryPage, articlePage.getArticleParams());
     }
 }

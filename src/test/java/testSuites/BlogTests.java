@@ -40,7 +40,7 @@ public class BlogTests extends BaseTests{
         MapAssertions.assertMapEquals(articleParamsFromCategoryPage,articlePage.getArticleParams());
     }
     @Test
-    public void blogMobileTest() {
+    public void blogMobileTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на постер "Блог"
         // на открывшейся странице (под названием "Блог") нажать на "+3"
@@ -48,10 +48,11 @@ public class BlogTests extends BaseTests{
         // сохранить (в переменные) параметры первой статьи: категорию, название, дату создания статьи и время чтения
         // нажать на первую статью
         // на открывшейся странице проверить совпадение параметров статьи
+        blogInputData = mapper.readValue(fileForBlog, BlogInputData.class);
         homePage.openHomePageMobile()
                 .clickRegionField()
-                .clickBlogPosterMobile("Блог");
-        blogPage.clickBlogSelectCategory("+3")
+                .clickBlogPosterMobile(blogInputData.getPosterName());
+        blogPage.clickBlogSelectCategory(blogInputData.getCategoryName())
                 .clickBlogCategory(blogInputData.getCategory().get(0));
         Map<String, String> articleParamsFromDepositsCategoryPage = depositsCategoryPage.getArticleParams();
         System.out.println(articleParamsFromDepositsCategoryPage);

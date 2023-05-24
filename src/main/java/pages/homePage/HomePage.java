@@ -14,7 +14,7 @@ public class HomePage {
     public static final By TELEGRAM_SUBSCRIBE_BUTTON = By.cssSelector("a[href='https://t.me/s/mts_bank_official']");
     public static final By TELEGRAM_BUTTON = By.xpath("//a[@href='https://t.me/mts_bank_official']");
     public static final By BLOG_POSTER = By.xpath("//a[@aria-label='Блог']");
-    public static final By BLOG_POSTER_MOBILE = By.xpath("//div[@class='sc-jfJyPD gDOKcd']//h2 ");
+    public static final By BLOG_POSTER_MOBILE = By.xpath("//div[@class='sc-bdfBQB gQaxRr']//div//h2");
     public static final By BLOG_BUTTON_MOBILE = By.xpath(".//..//a");
     public static final By CREDIT_CATEGORY = By.cssSelector("a[href='/chastnim-licam/krediti/']>div.sc-jJEKmz.ejANpH");
     public static final By CREDIT_ICON_MOBILE = By.cssSelector("div.sc-gqdwHF.ikGRIR>a[href='/chastnim-licam/krediti/']");

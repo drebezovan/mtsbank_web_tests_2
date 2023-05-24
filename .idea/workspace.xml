@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="change locators in desktop tests (Credit, Telegram and Blog)&#10;add list of cities to yml file">
+    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="refactor README">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/yml/premiumInputData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/yml/premiumInputData.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/SmallBusinessTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/SmallBusinessTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/BlogInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/BlogInputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/yml/blogInputData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/yml/blogInputData.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,23 @@
       <recent name="config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmallBusinessTests.smallBusinessTest">
+  <component name="RunManager" selected="JUnit.BlogTests.blogMobileTest">
+    <configuration name="BlogTests.blogMobileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.BlogTests" />
+      <option name="METHOD_NAME" value="blogMobileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PremiumTests.premiumPartnerMobileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graduation_project" />
       <extension name="coverage">
@@ -105,6 +123,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmallBusinessTests.smallBusinessMobileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.SmallBusinessTests" />
+      <option name="METHOD_NAME" value="smallBusinessMobileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SmallBusinessTests.smallBusinessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graduation_project" />
       <extension name="coverage">
@@ -121,45 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelegramTests.negativeTelegramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graduation_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testSuites.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testSuites" />
-      <option name="MAIN_CLASS_NAME" value="testSuites.TelegramTests" />
-      <option name="METHOD_NAME" value="negativeTelegramTest(int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TelegramTests.positiveTelegramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graduation_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testSuites.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testSuites" />
-      <option name="MAIN_CLASS_NAME" value="testSuites.TelegramTests" />
-      <option name="METHOD_NAME" value="positiveTelegramTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BlogTests.blogMobileTest" />
+        <item itemvalue="JUnit.SmallBusinessTests.smallBusinessMobileTest" />
         <item itemvalue="JUnit.SmallBusinessTests.smallBusinessTest" />
         <item itemvalue="JUnit.PremiumTests.premiumPartnerTest" />
         <item itemvalue="JUnit.PremiumTests.premiumPartnerMobileTest" />
-        <item itemvalue="JUnit.TelegramTests.positiveTelegramTest" />
-        <item itemvalue="JUnit.TelegramTests.negativeTelegramTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +199,8 @@
       <workItem from="1684790609644" duration="533000" />
       <workItem from="1684857444860" duration="7199000" />
       <workItem from="1684868005745" duration="3522000" />
-      <workItem from="1684874072902" duration="9416000" />
+      <workItem from="1684874072902" duration="9850000" />
+      <workItem from="1684917330808" duration="2981000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684858880429</created>
@@ -227,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684879913271</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change locators in desktop tests (Premium and Small Business)">
+      <created>1684883720676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684883720676</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor README">
+      <created>1684883962447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684883962447</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +255,8 @@
     <MESSAGE value="refactoring &#10;modify README file" />
     <MESSAGE value="modify README file" />
     <MESSAGE value="change locators in desktop tests (Credit, Telegram and Blog)&#10;add list of cities to yml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="change locators in desktop tests (Credit, Telegram and Blog)&#10;add list of cities to yml file" />
+    <MESSAGE value="change locators in desktop tests (Premium and Small Business)" />
+    <MESSAGE value="refactor README" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor README" />
   </component>
 </project>

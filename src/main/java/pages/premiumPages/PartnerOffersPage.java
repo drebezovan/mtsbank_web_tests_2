@@ -10,11 +10,11 @@ public class PartnerOffersPage {
 
     public static final By PARTNER_OFFERS_CATEGORY = By.cssSelector("div.DesktopWrapper-sc-1cd5b3b-0.gkbVsr>span>div");
     public static final By PARTNER_OFFERS_CATEGORY_MOBILE = By.cssSelector("div.TextWrapper-sc-cb89gg-1.dwzzrZ>div");
+    public static final By FIELD_AROUND_SELECTOR = By.cssSelector("div.Inner-sc-1sa4xnu-0.dZcsdJ");
     public static final By SECTION_NAME = By.cssSelector("div>h2");
-    public static final By SECTION_NAME_MOBILE = By.cssSelector("div.sc-khAkCZ.bXKaIB>div>h2");
     public static final String PARTNER_OFFERS_POSTER = "div.DesktopWrapper-sc-1cd5b3b-0.gkbVsr>div>div>div>div>img[alt='%s']";
     public static final String PARTNER_OFFERS_POSTER_MOBILE = "div.MobileWrapper-sc-1w1j3uo-0.ivcTWV>div>div>div>div>div>div>div>div>img[alt='%s']";
-    public static final By SELECTOR = By.cssSelector("i[data-testid='icon_baseX24/ic-arrow-down']");
+    public static final By SELECTOR = By.cssSelector("i[data-testid='icon_baseX24/ic-arrow-down']>svg");
 
     public PartnerOffersPage clickPartnerOffersCategory(String categoryName) {
         $$(PARTNER_OFFERS_CATEGORY).findBy(Condition.text(categoryName)).click();
@@ -24,11 +24,7 @@ public class PartnerOffersPage {
 
     public PartnerOffersPage clickPartnerOffersCategoryMobile(String categoryName) {
         $$(PARTNER_OFFERS_CATEGORY_MOBILE).findBy(Condition.text(categoryName)).click();
-        return this;
-    }
-
-    public PartnerOffersPage hoverPartnerOffersCategoryMobile(String categoryName) {
-        $$(SECTION_NAME_MOBILE).findBy(Condition.text(categoryName)).hover();
+        $(FIELD_AROUND_SELECTOR).click();
         return this;
     }
 
@@ -41,13 +37,13 @@ public class PartnerOffersPage {
 
     public PartnerOffersPage clickPartnerOffersPosterMobile(String posterName) {
         $$(String.format(PARTNER_OFFERS_POSTER_MOBILE, posterName))
-                .findBy(Condition.attribute("alt", posterName))
+                .findBy(Condition.attribute("alt", posterName)).scrollIntoView(true)
                 .click();
         return this;
     }
 
     public PartnerOffersPage clickSelector() {
-        $(SELECTOR).click();
+        $(SELECTOR).doubleClick();
         return this;
     }
 }

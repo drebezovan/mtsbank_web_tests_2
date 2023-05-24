@@ -15,7 +15,7 @@ public class CheckingAccountPage {
     public static final By CHOOSE_TARIFF_BUTTON = By.xpath
             ("//div[ @class='sc-bTvSiT fTNXwT']//div//a");
     public static final By PAYMENT_TYPE_TARIFF = By.xpath
-            ("//button[@class='sc-bsipwG dVHGrN']//div | //button[@class='sc-eLgNKc cnlxFV']//div");
+            ("//button[@class='sc-eLgNKc cnlxFV' or @class='sc-XhUvE bBaVlj']//div");
     public static final By BEST_TARIFF = By.cssSelector("div.sc-clsFYl.bLZfjY>button");
     public static final By TELEPHONE_FIELD = By.cssSelector("div[label='Мобильный телефон']>input");
     public static final By EMAIL_FIELD = By.cssSelector("div[label='Электронная почта']>input");
@@ -58,7 +58,7 @@ public class CheckingAccountPage {
     }
 
     public CheckingAccountPage clickCheckbox() {
-        $(CHECKBOX).click();
+        $(CHECKBOX).doubleClick();
         return this;
     }
 

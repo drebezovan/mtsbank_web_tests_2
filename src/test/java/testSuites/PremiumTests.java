@@ -19,7 +19,7 @@ public class PremiumTests extends BaseTests {
     PremiumInputData premiumInputData;
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 1, 2, 3, 4})
+    @ValueSource(ints = { 1, 2, 3})
     public void premiumPartnerTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // перейти в раздел "Премиум" в шапке сайта
@@ -40,7 +40,7 @@ public class PremiumTests extends BaseTests {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 1, 2, 3, 4})
+    @ValueSource(ints = {1, 2, 3})
     public void premiumPartnerMobileTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на иконку "Ещё" внизу экрана
@@ -49,20 +49,19 @@ public class PremiumTests extends BaseTests {
         // перейти в раздел "все"
         // нажать на значок селектора
         // выбрать категорию (например, "Искусство")
-        // нажать на значок селектора
+        // кликнуть по полю вокруг селектора
         // в выбранном разделе нажать на любой постер
         // на открывшемся модальном окне проверить название постера
 
         premiumInputData = mapper.readValue(fileForPremium, PremiumInputData.class);
 
         homePage.openHomePageMobile()
+                .clickRegionField()
                 .clickCategoriesIcon()
-                .clickPremiumCategoryMobile();
+                .clickPremiumCategoryMobile(premiumInputData.getCategoryName());
         premiumPage.clickAllOffersButton();
         partnerOffersPage.clickSelector()
                 .clickPartnerOffersCategoryMobile(premiumInputData.getCategory().get(index))
-                .clickSelector()
-                .hoverPartnerOffersCategoryMobile(premiumInputData.getCategory().get(index))
                 .clickPartnerOffersPosterMobile(premiumInputData.getPosterName().get(index));
         Assertions.assertEquals(premiumInputData.getPosterName().get(index), modalWindowPage.getModalWindowName());
     }

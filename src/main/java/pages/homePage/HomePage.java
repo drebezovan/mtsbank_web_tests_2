@@ -14,17 +14,18 @@ public class HomePage {
     public static final By TELEGRAM_SUBSCRIBE_BUTTON = By.cssSelector("a[href='https://t.me/s/mts_bank_official']");
     public static final By TELEGRAM_BUTTON = By.xpath("//a[@href='https://t.me/mts_bank_official']");
     public static final By BLOG_POSTER = By.xpath("//a[@aria-label='Блог']");
-    public static final By BLOG_POSTER_MOBILE = By.xpath("//div[@class='sc-bdfBQB gQaxRr']//div//h2");
-    public static final By BLOG_BUTTON_MOBILE = By.xpath(".//..//a");
+    public static final By BLOG_BUTTON_MOBILE = By.xpath
+            ("//div[@class='sc-bdfBQB gQaxRr']//div//a//div//div//div");
     public static final By CREDIT_CATEGORY = By.cssSelector("a[href='/chastnim-licam/krediti/']>div.sc-jJEKmz.ejANpH");
-    public static final By CREDIT_ICON_MOBILE = By.cssSelector("div.sc-gqdwHF.ikGRIR>a[href='/chastnim-licam/krediti/']");
+    public static final By CREDIT_ICON_MOBILE = By.xpath
+            ("//div[@class='sc-btdhtl cduirw' or @class='sc-gqdwHF ikGRIR']//a[@href='/chastnim-licam/krediti/']");
     public static final By PREMIUM_CATEGORY = By.cssSelector
             ("a[href='/chastnim-licam/private-banking/premium-package/']>div.sc-jJEKmz.ejANpH");
     public static final By SMALL_BUSINESS_CATEGORY = By.cssSelector("a[href='/malomu-biznesu/']");
     public static final By CATEGORIES_ICON_MOBILE = By.xpath
             ("//div[@class='sc-btdhtl cduirw']//button | //div[@class='sc-gqdwHF ikGRIR']//button");
-    public static final By PREMIUM_CATEGORY_MOBILE = By.cssSelector
-            ("a[href='/chastnim-licam/private-banking/premium-package/']");
+    public static final By PREMIUM_CATEGORY_MOBILE = By.xpath
+            ("//div[@class='ReactCollapse--content']//a");
     public static final By CATEGORY_MOBILE = By.cssSelector("div.AccordionButton-sc-zhf5t7-4.fEJcQr>div");
     public static final By SMALL_BUSINESS_CATEGORY_MOBILE = By.cssSelector
             ("div>a[href='/malomu-biznesu/raschetny-schet/']");
@@ -32,6 +33,7 @@ public class HomePage {
 
 
     public HomePage openHomePage() {
+        System.setProperty("chromeoptions.mobileEmulation", "");
         Selenide.open(cnf.baseUrl());
         Selenide.Wait().until(WebDriver::getTitle);
         return this;
@@ -50,13 +52,13 @@ public class HomePage {
     }
 
     public HomePage clickSubscribeTelegram() {
-        $(TELEGRAM_SUBSCRIBE_BUTTON).click();
+        $(TELEGRAM_SUBSCRIBE_BUTTON).scrollIntoView(true).click();
         switchTo().window(1);
         return this;
     }
 
     public HomePage clickTelegramButton() {
-        $(TELEGRAM_BUTTON).shouldBe(Condition.visible).click();
+        $(TELEGRAM_BUTTON).scrollIntoView(true).click();
         switchTo().window(1);
         return this;
     }
@@ -68,8 +70,7 @@ public class HomePage {
     }
 
     public HomePage clickBlogPosterMobile(String nameOfPoster) {
-        $$(BLOG_POSTER_MOBILE).findBy(Condition.text(nameOfPoster)).$(BLOG_BUTTON_MOBILE).click();
-        switchTo().window(1);
+        $$(BLOG_BUTTON_MOBILE).findBy(Condition.text(nameOfPoster)).scrollIntoView(true).click();
         return this;
     }
 
@@ -98,8 +99,8 @@ public class HomePage {
         return this;
     }
 
-    public HomePage clickPremiumCategoryMobile() {
-        $(PREMIUM_CATEGORY_MOBILE).click();
+    public HomePage clickPremiumCategoryMobile(String categoryName) {
+        $$(PREMIUM_CATEGORY_MOBILE).findBy(Condition.text(categoryName)).click();
         return this;
     }
 

@@ -61,15 +61,16 @@ public class CreditTests extends BaseTests{
         creditInputData = mapper.readValue(fileForCredit, CreditInputData.class);
 
         homePage.openHomePageMobile()
+                .clickRegionField()
                 .clickCreditIconMobile();
         creditPage.clickCreditUnderDepositPosterMobile(creditInputData.getPosterName());
         creditUnderDepositPage.clickSubmitApplicationMobile()
-                              .fullCreditSumField(creditInputData.getCreditSum().get(2))
-                              .fullCreditPeriodField(creditInputData.getCreditPeriod().get(2))
-                              .selectTypeIncomeField(creditInputData.getTypeOfIncome().get(1))
-                              .selectObjectDepositField(creditInputData.getObjectName().get(2))
-                              .fullCityField(creditInputData.getCity().get(2))
-                              .selectCreditGoalField(creditInputData.getCreditGoal().get(2));
+                              .fullCreditSumField(creditInputData.getCreditSum().get(PreparationUtils.getRandomIntegerBetweenRange(0,6)))
+                              .fullCreditPeriodField(creditInputData.getCreditPeriod().get(PreparationUtils.getRandomIntegerBetweenRange(0,6)))
+                              .selectTypeIncomeField(creditInputData.getTypeOfIncome().get(PreparationUtils.getRandomIntegerBetweenRange(0,1)))
+                              .selectObjectDepositField(creditInputData.getObjectName().get(PreparationUtils.getRandomIntegerBetweenRange(0,2)))
+                              .fullCityField(creditInputData.getCity().get(PreparationUtils.getRandomIntegerBetweenRange(0,28)))
+                              .selectCreditGoalField(creditInputData.getCreditGoal().get(PreparationUtils.getRandomIntegerBetweenRange(0,9)));
         Map<String, String> creditParamsFromCreditUnderDepositPage = creditUnderDepositPage.getCreditParams();
         creditUnderDepositPage.clickPaymentScheduleButton();
         Map<String, String> creditParamsFromPaymentSchedulePage = paymentSchedulePage.getCreditParams();

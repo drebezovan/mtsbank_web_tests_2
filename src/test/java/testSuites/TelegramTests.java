@@ -18,7 +18,7 @@ public class TelegramTests extends BaseTests {
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1})
-    public void negativeTelegramTest(int index) throws IOException {
+    public void subscribeTelegramTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти постер "Новости МТС банка без задержки в Telegram"
         // Нажать на кнопку "Подписаться"
@@ -31,7 +31,7 @@ public class TelegramTests extends BaseTests {
     }
 
     @Test
-    public void positiveTelegramTest() throws IOException {
+    public void telegramButtonTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти в конце страницы иконку с изображением логотипа Telegram
         // нажать на эту иконку
@@ -43,22 +43,22 @@ public class TelegramTests extends BaseTests {
         Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(1), telegramPage.getNameTelegramGroup());
     }
 
-    @ParameterizedTest
-    @ValueSource(ints = {0, 1})
-    public void negativeTelegramMobileTest(int index) throws IOException {
+    @Test
+    public void subscribeTelegramMobileTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти постер "Новости МТС банка без задержки в Telegram"
         // Нажать на кнопку "Подписаться"
-        // на открывшейся странице проверить название канала с ожидаемыми названиями
+        // на открывшейся странице проверить название канала с ожидаемым названием
 
         telegramInputData = mapper.readValue(fileForTelegram, TelegramInputData.class);
         homePage.openHomePageMobile()
+                .clickRegionField()
                 .clickSubscribeTelegram();
-        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(index), telegramPage.getNameTelegramGroup());
+        Assertions.assertEquals(telegramInputData.getNameTelegramGroup().get(2), telegramPage.getNameTelegramGroupMobile());
     }
 
     @Test
-    public void positiveTelegramMobileTest() throws IOException {
+    public void telegramButtonMobileTest() throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // найти в конце страницы иконку с изображением логотипа Telegram
         // нажать на эту иконку

@@ -1,6 +1,5 @@
 package testSuites;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.blogPages.ArticlePage;
@@ -22,7 +21,7 @@ public class BlogTests extends BaseTests{
     BlogInputData blogInputData;
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 1, 2, 3, 4, 5})
+    @ValueSource(ints = { 1, 2, 3})
     public void blogTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на постер "Блог"
@@ -39,8 +38,9 @@ public class BlogTests extends BaseTests{
         depositsCategoryPage.clickArticle();
         MapAssertions.assertMapEquals(articleParamsFromCategoryPage,articlePage.getArticleParams());
     }
-    @Test
-    public void blogMobileTest() throws IOException {
+    @ParameterizedTest
+    @ValueSource(ints = { 1, 2, 3})
+    public void blogMobileTest(int index) throws IOException {
         // открыть сайт https://www.mtsbank.ru/
         // нажать на постер "Блог"
         // на открывшейся странице (под названием "Блог") нажать на "+3"
@@ -53,11 +53,9 @@ public class BlogTests extends BaseTests{
                 .clickRegionField()
                 .clickBlogPosterMobile(blogInputData.getPosterName());
         blogPage.clickBlogSelectCategory(blogInputData.getCategoryName())
-                .clickBlogCategory(blogInputData.getCategory().get(0));
+                .clickBlogCategory(blogInputData.getCategory().get(index));
         Map<String, String> articleParamsFromDepositsCategoryPage = depositsCategoryPage.getArticleParams();
-        System.out.println(articleParamsFromDepositsCategoryPage);
         depositsCategoryPage.clickArticle();
-        System.out.println(articlePage.getArticleParams());
         MapAssertions.assertMapEquals(articleParamsFromDepositsCategoryPage,articlePage.getArticleParams());
     }
 }

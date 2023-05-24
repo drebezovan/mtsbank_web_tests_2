@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="add github actions">
+    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="modify locators in all tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PartnerOffersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PartnerOffersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PremiumPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PremiumPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/PremiumInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/PremiumInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/yml/blogInputData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/yml/blogInputData.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/yml/premiumInputData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/yml/premiumInputData.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/yml/smallBusinessInputData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/yml/smallBusinessInputData.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/yml/telegramInputData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/yml/telegramInputData.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/CreditTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/CreditTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/PremiumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/PremiumTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/TelegramTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/TelegramTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +185,7 @@
       <workItem from="1684857444860" duration="7199000" />
       <workItem from="1684868005745" duration="3522000" />
       <workItem from="1684874072902" duration="9850000" />
-      <workItem from="1684917330808" duration="20836000" />
+      <workItem from="1684917330808" duration="21994000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684858880429</created>
@@ -252,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684920797080</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modify locators in all tests">
+      <created>1684943709535</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684943709535</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +257,7 @@
     <MESSAGE value="change locators in desktop tests (Premium and Small Business)" />
     <MESSAGE value="refactor README" />
     <MESSAGE value="add github actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add github actions" />
+    <MESSAGE value="modify locators in all tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify locators in all tests" />
   </component>
 </project>

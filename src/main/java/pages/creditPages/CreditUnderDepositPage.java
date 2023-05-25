@@ -13,8 +13,7 @@ public class CreditUnderDepositPage implements PageWithCreditParameters {
 
     public static final By SUBMIT_APPLICATION_BUTTON = By.xpath
             ("//div[@class='styled__Wrapper-sc-44ximf-1 iHeHnU']/div/div/button");
-    public static final By SUBMIT_APPLICATION_BUTTON_MOBILE = By.cssSelector
-            ("div.styled__Wrapper-sc-1alu4l7-1.bppgPy>div>button");
+    public static final By SUBMIT_APPLICATION_BUTTON_MOBILE = By.cssSelector("div.styled__Wrapper-sc-1alu4l7-1.bppgPy>div>button");
     public static final By CREDIT_SUM = By.cssSelector("div[label='Сумма кредита']>input");
     public static final By CREDIT_PERIOD = By.cssSelector("div[label='Срок кредита']>input");
     public static final By SELECT_TYPES_INCOME = By.cssSelector("div[label='Укажите основной вид дохода']>input");

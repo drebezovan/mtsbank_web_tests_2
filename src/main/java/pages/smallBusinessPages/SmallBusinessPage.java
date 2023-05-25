@@ -7,8 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SmallBusinessPage {
 
-    public static final By CHECKING_ACCOUNT_CATEGORY = By.cssSelector
-            ("a[href='/malomu-biznesu/raschetny-schet/']>div.sc-fubCzh.hPIPGu");
+    public static final By CHECKING_ACCOUNT_CATEGORY = By.cssSelector("a[href='/malomu-biznesu/raschetny-schet/']>div.sc-fubCzh.hPIPGu");
 
     @Step("Нажать на категорию «Расчетный счет»")
     public SmallBusinessPage clickCheckingAccountCategory() {

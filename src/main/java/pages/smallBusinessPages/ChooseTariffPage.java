@@ -14,8 +14,7 @@ public class ChooseTariffPage {
                     "//div[@class='sc-eTLXjT bloZsc' or @class='sc-bQVnZi gDdtzv']//div");
     public static final By OPEN_ACCOUNT_BUTTON = By.xpath
             ("//div[@class='sc-jHMyAn fxrbcm' or @class='sc-hKKfEi iVrDdZ']//div//button//div ");
-    public static final By NAME_OF_TARIFF_IN_APPLICATION = By.xpath
-            ("//div[@label='Тариф']//input");
+    public static final By NAME_OF_TARIFF_IN_APPLICATION = By.xpath("//div[@label='Тариф']//input");
 
 
     @Step("Заполнить все поля в области «Подберите тариф для бизнеса»")

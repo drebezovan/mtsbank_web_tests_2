@@ -18,19 +18,22 @@ public class ArticlePage implements PageWithArticleParameters {
             ("//div[@class='sc-ehSDrC hIcRvt' or @class='sc-pGacB hqCMbN' or @class='sc-pGacB eFCEke']//div//div//div//div");
 
     @Step("На открывшейся странице проверить совпадение категории")
-    public String getArticleCategory(){
+    public String getArticleCategory() {
         return $(ARTICLE_CATEGORY).shouldBe(Condition.visible).innerText().trim();
     }
+
     @Step("На открывшейся странице проверить совпадение названия статьи")
-    public String getArticleName(){
+    public String getArticleName() {
         return $(ARTICLE_NAME).innerText().trim();
     }
+
     @Step("На открывшейся странице проверить совпадение даты создания статьи")
-    public String getArticleDate(){
+    public String getArticleDate() {
         return $(ARTICLE_DATE).innerText().trim();
     }
+
     @Step("На открывшейся странице проверить совпадение времени чтения статьи")
-    public String getArticleReadingTime(){
+    public String getArticleReadingTime() {
         return $(ARTICLE_READING_TIME).innerText().trim();
     }
 }

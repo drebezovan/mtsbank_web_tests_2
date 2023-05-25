@@ -1,7 +1,6 @@
 package pages.blogPages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -13,15 +12,13 @@ public class BlogPage {
 
     @Step("На открывшейся странице (под названием «Блог») нажать на «+3»")
     public BlogPage clickBlogSelectCategory(String categoryName) {
-        SelenideElement category = $$(CATEGORIES_NAME).findBy(Condition.text(categoryName));
-        category.click();
+        $$(CATEGORIES_NAME).findBy(Condition.text(categoryName)).click();
         return this;
     }
 
     @Step("выбрать категорию, например «Вклады и счета»")
     public BlogPage clickBlogCategory(String categoryName) {
-        SelenideElement category = $$(CATEGORIES_NAME).findBy(Condition.text(categoryName));
-        category.click();
+        $$(CATEGORIES_NAME).findBy(Condition.text(categoryName)).click();
         return this;
     }
 }

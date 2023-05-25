@@ -3,6 +3,7 @@ package steps;
 import lombok.Data;
 
 import java.util.List;
+
 @Data
 public class PremiumInputData {
     private String categoryName;

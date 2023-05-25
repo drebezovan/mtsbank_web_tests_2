@@ -8,8 +8,7 @@ import steps.PageWithCreditParameters;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class PaymentSchedulePage implements PageWithCreditParameters {
-    public static final By NAME_PARAMETER_FIELD = By.xpath
-            ("//div[@class='sc-gyUflj gtGQuS']//div//div//div//div");
+    public static final By NAME_PARAMETER_FIELD = By.xpath("//div[@class='sc-gyUflj gtGQuS']//div//div//div//div");
     public static final By VALUE_PARAMETER_FIELD = By.xpath(".//..//..//h4");
 
     @Step("на открывшейся странице проверить совпадение полей «Ежемесячный платеж» , «Ставка»  и «Сумма кредита»")

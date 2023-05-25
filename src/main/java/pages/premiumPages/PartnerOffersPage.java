@@ -42,7 +42,8 @@ public class PartnerOffersPage {
     @Step("В выбранном разделе нажать на любой постер")
     public PartnerOffersPage clickPartnerOffersPosterMobile(String posterName) {
         $$(String.format(PARTNER_OFFERS_POSTER_MOBILE, posterName))
-                .findBy(Condition.attribute("alt", posterName)).scrollIntoView(true)
+                .findBy(Condition.attribute("alt", posterName))
+                .scrollIntoView(true)
                 .click();
         return this;
     }

@@ -7,6 +7,11 @@ jobs:
   run_Tests:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        browser: chrome
+        parallelism: 21
+
     steps:
       - name: Setup JDK
         uses: actions/setup-java@v1

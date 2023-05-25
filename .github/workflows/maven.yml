@@ -22,12 +22,6 @@ jobs:
           chmod +x ./cm
           ./cm selenoid start --vnc  
 
-      - name: Start Selenoid
-        uses: aerokube/selenoid-action@v1
-        with:
-          selenoid_images: "selenoid/chrome:latest"
-          vnc: true
-
       - name: Build and test
         env:
           BROWSER: chrome

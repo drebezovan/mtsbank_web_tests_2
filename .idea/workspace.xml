@@ -7,7 +7,6 @@
     <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="debug github action">
       <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,7 @@
       <workItem from="1684874072902" duration="9850000" />
       <workItem from="1684917330808" duration="26597000" />
       <workItem from="1684956333915" duration="11929000" />
-      <workItem from="1685008783791" duration="8760000" />
+      <workItem from="1685008783791" duration="9770000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684858880429</created>
@@ -319,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685022765075</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="debug github action">
+      <created>1685024300442</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1685024300442</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

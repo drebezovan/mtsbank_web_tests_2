@@ -6,24 +6,48 @@ on:
 jobs:
   run_Tests:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Setup JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: '19'
-
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Download selenoid
-        run: |
-          curl -s https://aerokube.com/cm/bash  | bash
-          chmod +x ./cm
-          ./cm selenoid start --vnc
+      - name: Set up JDK 19
+        uses: actions/setup-java@v1
+        with:
+          java-version: 19
 
-      - name: Build and test with Maven
-        run: mvn clean test
+      - name: Install Maven
+        run: sudo apt-get install -y maven
+
+      - name: Start Selenoid
+        uses: aerokube/selenoid-action@v1
+        with:
+          selenoid_images: "selenoid/chrome:latest"
+          vnc: true
+
+      - name: Build and test
+        env:
+          BROWSER: chrome
+        run: mvn clean test -DBROWSER=$BROWSER -Dselenide.browser=$BROWSER -Dselenide.remote=http://localhost:4444/wd/hub -Dtest.parallel=true -Dtest.thread.count=21
+
+      - name: Stop Selenoid
+        run: docker stop $(docker ps -aqf "ancestor=selenoid/vnc:chrome_81.0")
+#    steps:
+#      - name: Setup JDK
+#        uses: actions/setup-java@v1
+#        with:
+#          java-version: '19'
+#
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#
+#      - name: Download selenoid
+#        run: |
+#          curl -s https://aerokube.com/cm/bash  | bash
+#          chmod +x ./cm
+#          ./cm selenoid start --vnc
+#
+#      - name: Build and test with Maven
+#        run: mvn clean test
 
       - name: Generate allure report
         uses: simple-elf/allure-report-action@master

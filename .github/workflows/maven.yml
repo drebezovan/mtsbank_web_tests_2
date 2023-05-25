@@ -34,9 +34,6 @@ jobs:
         run: mvn clean test -DBROWSER=$BROWSER -Dselenide.browser=$BROWSER -Dselenide.remote=http://localhost:4444/wd/hub
 #        -Dtest.parallel=true
 #        -Dtest.thread.count=21
-
-      - name: Stop Selenoid
-        run: docker stop $(docker ps -aqf "ancestor=selenoid/vnc:chrome_81.0")
 #    steps:
 #      - name: Setup JDK
 #        uses: actions/setup-java@v1

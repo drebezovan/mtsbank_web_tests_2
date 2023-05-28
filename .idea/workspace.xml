@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="debug github action">
+    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="debug github action&#10;refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ProjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ProjectConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/BlogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/BlogPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/PaymentSchedulePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/PaymentSchedulePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PartnerOffersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/premiumPages/PartnerOffersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/SmallBusinessPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/SmallBusinessPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/telegramPages/TelegramPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/BlogInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/BlogInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/BusinessInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/BusinessInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/CreditInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/CreditInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/MapAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/MapAssertions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/PageWithArticleParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/PageWithArticleParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/PageWithCreditParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/PageWithCreditParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/PremiumInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/PremiumInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/TelegramInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/TelegramInputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +190,9 @@
       <workItem from="1684874072902" duration="9850000" />
       <workItem from="1684917330808" duration="26597000" />
       <workItem from="1684956333915" duration="11929000" />
-      <workItem from="1685008783791" duration="13901000" />
+      <workItem from="1685008783791" duration="16469000" />
+      <workItem from="1685271536910" duration="625000" />
+      <workItem from="1685273417183" duration="3855000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684858880429</created>
@@ -386,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685028698007</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="debug github action&#10;refactoring">
+      <created>1685031858969</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1685031858969</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,6 +398,7 @@
     <MESSAGE value="add timeout" />
     <MESSAGE value="add all parallel test configuration" />
     <MESSAGE value="debug github action" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug github action" />
+    <MESSAGE value="debug github action&#10;refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug github action&#10;refactoring" />
   </component>
 </project>

@@ -26,9 +26,7 @@ public class BaseTests {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadTimeout = 500000;
-        Configuration.timeout = 500000;
-        Configuration.remoteReadTimeout = 500000;
-        Configuration.remoteConnectionTimeout = 500000;
+        Configuration.pageLoadStrategy = "eager";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.remote = "http://localhost:4444/wd/hub";
         System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\",\"--remote-debugging-port=9222\"");

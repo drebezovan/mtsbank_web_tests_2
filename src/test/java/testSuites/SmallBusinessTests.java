@@ -63,8 +63,8 @@ public class SmallBusinessTests extends BaseTests {
                 .clickCategoryMobile(businessInputData.getCategoryName())
                 .clickSmallBusinessCategoryMobile();
         checkingAccountPage.clickOpenAccountButtonMobile()
-                .clickPaymentTypeTariffMobile()
-                .clickBestTariffMobile()
+//                .clickPaymentTypeTariffMobile()
+//                .clickBestTariffMobile()
                 .fullFields(businessInputData.getTelephone(), businessInputData.getEmail())
                 .clickCheckbox()
                 .fullFieldsForOrganization(businessInputData.getOrganizationName(),

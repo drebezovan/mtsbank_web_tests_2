@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="debug github action&#10;refactoring">
+    <list default="true" id="99384887-544e-48f5-9e2b-ad39bb061f7b" name="Changes" comment="debug github action">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/ArticlePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/blogPages/CategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/blogPages/CategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/creditPages/CreditUnderDepositPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/CheckingAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/smallBusinessPages/ChooseTariffPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/BlogTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuites/SmallBusinessTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuites/SmallBusinessTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,36 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.testSuites in Graduation_project">
-    <configuration name="CreditTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graduation_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testSuites.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testSuites" />
-      <option name="MAIN_CLASS_NAME" value="testSuites.CreditTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PremiumTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graduation_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testSuites.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testSuites" />
-      <option name="MAIN_CLASS_NAME" value="testSuites.PremiumTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PremiumTests.premiumPartnerMobileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graduation_project" />
       <extension name="coverage">
@@ -119,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PremiumTests.premiumPartnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SmallBusinessTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graduation_project" />
       <extension name="coverage">
         <pattern>
@@ -128,9 +108,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testSuites" />
-      <option name="MAIN_CLASS_NAME" value="testSuites.PremiumTests" />
-      <option name="METHOD_NAME" value="premiumPartnerTest(int)" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.SmallBusinessTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmallBusinessTests.smallBusinessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.SmallBusinessTests" />
+      <option name="METHOD_NAME" value="smallBusinessTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelegramTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testSuites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSuites" />
+      <option name="MAIN_CLASS_NAME" value="testSuites.TelegramTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.testSuites in Graduation_project" />
-        <item itemvalue="JUnit.CreditTests" />
-        <item itemvalue="JUnit.PremiumTests" />
+        <item itemvalue="JUnit.TelegramTests" />
+        <item itemvalue="JUnit.SmallBusinessTests" />
+        <item itemvalue="JUnit.SmallBusinessTests.smallBusinessTest" />
         <item itemvalue="JUnit.PremiumTests.premiumPartnerMobileTest" />
-        <item itemvalue="JUnit.PremiumTests.premiumPartnerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +202,11 @@
       <workItem from="1684956333915" duration="11929000" />
       <workItem from="1685008783791" duration="16469000" />
       <workItem from="1685271536910" duration="625000" />
-      <workItem from="1685273417183" duration="3855000" />
+      <workItem from="1685273417183" duration="4538000" />
+      <workItem from="1685471858681" duration="1156000" />
+      <workItem from="1685635509930" duration="265000" />
+      <workItem from="1685638741596" duration="6504000" />
+      <workItem from="1685646435243" duration="5433000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684858880429</created>
@@ -376,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685031858969</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="debug github action">
+      <created>1685279219319</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1685279219319</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,8 +418,8 @@
     <MESSAGE value="add allure dependencies" />
     <MESSAGE value="add timeout" />
     <MESSAGE value="add all parallel test configuration" />
-    <MESSAGE value="debug github action" />
     <MESSAGE value="debug github action&#10;refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug github action&#10;refactoring" />
+    <MESSAGE value="debug github action" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug github action" />
   </component>
 </project>

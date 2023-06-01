@@ -10,13 +10,12 @@ public class CategoryPage implements PageWithArticleParameters {
     public static final By ARTICLE_CATEGORY = By.xpath
             ("//div[@class='sc-eCstlR SUwnL']//a | //div[@class='sc-iNqMzA jQvNAE']//a");
     public static final By ARTICLE_READING_TIME = By.xpath
-            ("//div[@class='sc-hKgJUU jaxqmo']//div//div//div | //div[@class='sc-eJMPIT Werdk']//div");
+            ("//div[@class='sc-eCstlR SUwnL']//div//div");
     public static final By ARTICLE_NAME = By.xpath
-            ("//div[@class='sc-hKgJUU jaxqmo']//p | //div[@class='sc-laRQdt eUTSjA']//p");
+            ("//div[@class='sc-hKgJUU kapMYN']//p ");
     public static final By ARTICLE_DATE = By.xpath
             ("//div[@class='sc-fubCzh hZosTh']//div | //div[@class='sc-higWrZ iLazrU']//div");
-    public static final By ARTICLE = By.xpath
-            ("//div[@class='sc-pGacB eHzbCx'] | //div[@class='sc-ehSDrC lhyqot']");
+    public static final By ARTICLE = By.xpath("//div[@class='sc-pGacB kCdQmq']");
 
     @Step("Cохранить (в переменные) категорию")
     public String getArticleCategory() {

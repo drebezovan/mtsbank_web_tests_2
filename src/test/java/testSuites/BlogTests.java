@@ -56,8 +56,8 @@ public class BlogTests extends BaseTests {
         homePage.openHomePageMobile()
                 .clickRegionField()
                 .clickBlogPosterMobile(blogInputData.getPosterName());
-        blogPage.clickBlogSelectCategory(blogInputData.getCategoryName())
-                .clickBlogCategory(blogInputData.getCategory().get(index));
+//        blogPage.clickBlogSelectCategory(blogInputData.getCategoryName())
+        blogPage.clickBlogCategory(blogInputData.getCategory().get(index));
         Map<String, String> articleParamsFromDepositsCategoryPage = depositsCategoryPage.getArticleParams();
         depositsCategoryPage.clickArticle();
         MapAssertions.assertMapEquals(articleParamsFromDepositsCategoryPage, articlePage.getArticleParams());

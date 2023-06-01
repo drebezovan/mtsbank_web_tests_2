@@ -19,17 +19,14 @@ public class HomePage {
             ("//div[@class='sc-bdfBQB gQaxRr']//div//a//div//div//div");
     public static final By CREDIT_CATEGORY = By.cssSelector("a[href='/chastnim-licam/krediti/']>div.sc-jJEKmz.ejANpH");
     public static final By CREDIT_ICON_MOBILE = By.xpath
-            ("//div[@class='sc-btdhtl cduirw' or @class='sc-gqdwHF ikGRIR']//a[@href='/chastnim-licam/krediti/']");
+            ("//div[@class='sc-fTACoA vzbyM' or @class='sc-btdhtl cduirw']//a[@href='/chastnim-licam/krediti/']");
     public static final By PREMIUM_CATEGORY = By.cssSelector
             ("a[href='/chastnim-licam/private-banking/premium-package/']>div.sc-jJEKmz.ejANpH");
     public static final By SMALL_BUSINESS_CATEGORY = By.cssSelector("a[href='/malomu-biznesu/']");
-    public static final By CATEGORIES_ICON_MOBILE = By.xpath
-            ("//div[@class='sc-btdhtl cduirw']//button | //div[@class='sc-gqdwHF ikGRIR']//button");
-    public static final By PREMIUM_CATEGORY_MOBILE = By.xpath
-            ("//div[@class='ReactCollapse--content']//a");
+    public static final By CATEGORIES_ICON_MOBILE = By.xpath("//button//span");
+    public static final By PREMIUM_CATEGORY_MOBILE = By.xpath("//div[@class='ReactCollapse--content']//a");
     public static final By CATEGORY_MOBILE = By.cssSelector("div.AccordionButton-sc-zhf5t7-4.fEJcQr>div");
-    public static final By SMALL_BUSINESS_CATEGORY_MOBILE = By.cssSelector
-            ("div>a[href='/malomu-biznesu/raschetny-schet/']");
+    public static final By SMALL_BUSINESS_CATEGORY_MOBILE = By.cssSelector("div>a[href='/malomu-biznesu/raschetny-schet/']");
     public static final By REGION_FIELD = By.cssSelector("div.sc-XhUvE.kXRvgz>button");
 
 

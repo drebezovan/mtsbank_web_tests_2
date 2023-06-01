@@ -22,10 +22,9 @@ public class CreditUnderDepositPage implements PageWithCreditParameters {
     public static final By CITY_FIELD = By.cssSelector("div[label='Город объекта залога']>input");
     public static final By FIRST_CITY_FIELD = By.cssSelector("ul[role='listbox']>li");
     public static final By CREDIT_GOAL_FIELD = By.cssSelector("div[label='Цель кредита']>input");
-    public static final By NAME_PARAMETER_FIELD = By.xpath
-            ("//div[@class='sc-crrszt iprLEn']//div | //div[@class='sc-citxvW hZzfEK']//div");
+    public static final By NAME_PARAMETER_FIELD = By.xpath("//div[@class='sc-jQbJRc efmxpT']//div");
     public static final By VALUE_PARAMETER_FIELD = By.xpath(".//..//..//h4");
-    public static final By PAYMENT_SCHEDULE_BUTTON = By.xpath("//div[@class='sc-iJuVqt hSZvIe']//button");
+    public static final By PAYMENT_SCHEDULE_BUTTON = By.xpath("//div[@class='sc-ikPAEB dYHLFr']//button");
 
     @Step("Нажать на кнопку «Подать заявку»")
     public CreditUnderDepositPage clickSubmitApplication() {

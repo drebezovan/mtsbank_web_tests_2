@@ -8,14 +8,11 @@ import steps.PageWithArticleParameters;
 import static com.codeborne.selenide.Selenide.$;
 
 public class ArticlePage implements PageWithArticleParameters {
-    public static final By ARTICLE_CATEGORY = By.xpath
-            ("//div[@class='sc-ehSDrC hIcRvt' or @class='sc-pGacB hqCMbN' or @class='sc-pGacB eFCEke']//div//div//a");
-    public static final By ARTICLE_NAME = By.xpath
-            ("//div//div//h1 | //div[@class='sc-hKgJUU jaxqmo' or @class='sc-laRQdt eUTSjA']//p");
+    public static final By ARTICLE_CATEGORY = By.xpath("//div[@class='sc-eCstlR SUwnL']//a");
+    public static final By ARTICLE_NAME = By.xpath("//div//h1 | //div//p");
     public static final By ARTICLE_DATE = By.xpath
-            ("//div[@class='sc-ehSDrC hIcRvt' or @class='sc-pGacB hqCMbN' or @class='sc-pGacB eFCEke']//div//div//div");
-    public static final By ARTICLE_READING_TIME = By.xpath
-            ("//div[@class='sc-ehSDrC hIcRvt' or @class='sc-pGacB hqCMbN' or @class='sc-pGacB eFCEke']//div//div//div//div");
+            ("//div[@class='sc-fubCzh hZosTh']//div");
+    public static final By ARTICLE_READING_TIME = By.xpath("//div[@class='sc-gKseQn gycvVa']//div");
 
     @Step("На открывшейся странице проверить совпадение категории")
     public String getArticleCategory() {

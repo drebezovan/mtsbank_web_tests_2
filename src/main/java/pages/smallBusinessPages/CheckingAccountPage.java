@@ -9,9 +9,10 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class CheckingAccountPage {
 
-    public static final By OPEN_ACCOUNT_BUTTON = By.cssSelector("div.styled__Wrapper-sc-44ximf-1.iHeHnU>div>div>button");
-    public static final By OPEN_ACCOUNT_BUTTON_MOBILE = By.cssSelector("div.styled__Wrapper-sc-1alu4l7-1.bppgPy>div>button");
-    public static final By CHOOSE_TARIFF_BUTTON = By.xpath("//div[ @class='sc-bTvSiT fTNXwT']//div//a");
+    public static final By OPEN_ACCOUNT_BUTTON = By.cssSelector("div.styled__ContentWrapper-sc-44ximf-2.jrYhjd>div>button");
+    public static final By OPEN_ACCOUNT_BUTTON_MOBILE = By.cssSelector("div.styled__HandlersWrapper-sc-17whzkn-0.cbvanS>button");
+    public static final By CHOOSE_TARIFF_BUTTON = By.xpath
+            ("//a[@href='/malomu-biznesu/raschetny-schet/tariffs-calculator/'][@data-testid='button']");
     public static final By PAYMENT_TYPE_TARIFF = By.xpath
             ("//button[@class='sc-eLgNKc cnlxFV' or @class='sc-XhUvE bBaVlj']//div");
     public static final By BEST_TARIFF = By.cssSelector("div.sc-clsFYl.bLZfjY>button");

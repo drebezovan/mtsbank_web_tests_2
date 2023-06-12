@@ -1,5 +1,5 @@
 ># Тестирование web сайта [mtsbank.ru](https://www.mtsbank.ru/)
-># Ссылка на [allure отчет](https://drebezovan.github.io/mtsbank_web_tests_2/4/)
+># Ссылка на [allure отчет](https://drebezovan.github.io/mtsbank_web_tests_2/5/)
 
 # Тестовый набор сценариев для категории "Блог"
 ## №1. Проверка совпадения параметров статьи в категории "Блог" на двух страницах.
